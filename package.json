@@ -1,0 +1,12 @@
+{
+  "name": "@hugios/breaches",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names client,server -c cyan,green \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "start": "concurrently --names client,server -c cyan,green \"npm run build --prefix client\" \"npm run start --prefix server\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
