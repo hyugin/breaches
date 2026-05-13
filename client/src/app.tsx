@@ -6,7 +6,7 @@ import Form from "./components/form.component";
 import BreachList from "./components/breach-list.component";
 import { useSnackbar } from "notistack";
 
-const GET_BREACHES = gql`
+export const GET_BREACHES = gql`
   query GetBreaches($email: String) {
     breaches(email: $email)
       @rest(type: "Breaches", path: "breaches?email={args.email}") {
